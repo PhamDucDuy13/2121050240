@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Bai 4</title>
+    </head>
+    <body>
+        <h1>Form Tạo Thông Tin</h1>
+        <form action="">
+            <div>
+                <!-- input nếu ko truyền type thì type sẽ mặc định là text -->
+                <p><b>Họ và tên:</b></p>
+                <input
+                    type="text"
+                    name="hoVaTen"
+                />
+            </div>
+
+            <div>
+                <p><b>Gioi thieu</b></p>
+                <textarea
+                    name="gioiThieu"
+                    id=""
+                >
+                </textarea>
+            </div>
+
+            <div>
+                <p><b>Email</b></p>
+                <input
+                    type="email"
+                    name="email"
+                />
+            </div>
+
+            <div>
+                <p><b>So Dien Thoai</b></p>
+                <input
+                    type="tel"
+                    placeholder="dang so 123"
+                    required
+                    pattern="([0-9]{1}(-[0-9]{3})(-[0-9]{3})(-[0-9]{4}))"
+                />
+
+                <div>
+                    <p><b>Gioi Tinh</b></p>
+                    <input
+                        type="radio"
+                        name="gioiTinh"
+                        value="male"
+                    />Male<br />
+                    <input
+                        type="radio"
+                        name="gioiTinh"
+                        value="female"
+                    />Female
+                </div>
+
+                <div>
+                    <p><b>Gioi Tinh</b></p>
+                    Sport:<input
+                        type="checkbox"
+                        name="soThich"
+                        value="sport"
+                    />Sport<br />
+                    Game:<input
+                        type="checkbox"
+                        name="soThich"
+                        value="game"
+                    />Game <br />
+                    Music:<input
+                        type="checkbox"
+                        name="soThich"
+                        value="music"
+                    />Music
+                </div>
+
+                <div>
+                    <p><b>Trinh duyet web hay su dung</b></p>
+                    <input list="browser" />
+                    <datalist id="browser">
+                        <option value="Internet explorer">
+                            Internet explorer
+                        </option>
+                        <option value="Chrome">Chrome</option>
+                        <option value="Firefox">Firefox</option>
+                        <option value="Opera">Opera</option>
+                    </datalist>
+
+                    <select name="browser">
+                        <option value="Internet explorer">
+                            Internet explorer
+                        </option>
+                        <option value="Chrome">Chrome</option>
+                        <option value="Firefox">Firefox</option>
+                        <option value="Opera">Opera</option>
+                        <option value="Safari">Safari</option>
+                        <option value="CocCoc">CocCoc</option>
+                    </select>
+                </div>
+
+                <div>
+                    0
+                    <input
+                        type="range"
+                        id="a"
+                        value="50"
+                    />
+                    100
+                </div>
+
+                <div>
+                    <input type="submit" />
+                    <button>Click</button>
+                    <input type="reset" />
+                </div>
+
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/L4dSipbZj8A?si=-Y0PKNvWBQIAehYG"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="
+                        accelerometer;
+                        autoplay;
+                        clipboard-write;
+                        encrypted-media;
+                        gyroscope;
+                        picture-in-picture;
+                        web-share;
+                    "
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                ></iframe>
+            </div>
+            <marquee>
+                <img
+                    src="../Bai 2/img/tree.jpg"
+                    alt=""
+                />
+            </marquee>
+            <audio controls>
+                <source
+                    src=""
+                    type="audio/mp3"
+                />
+            </audio>
+            <video controls>
+                <source src="" />
+            </video>
+        </form>
+    </body>
+</html>
