@@ -1,0 +1,48 @@
+.khoi1 {
+    background-color: red;
+}
+.khoi2 {
+    background-color: blue;
+    /* 1 gia tri: cach deu xung quanh= gia tri do */
+    /* 2 giat tri:gia tri dau(tren, duoi),gia tri hai (trai ,phai) */
+    /* 4 gia tri:theo thu tu tren ,phai, duoi,trai */
+    /* 
+              margin
+     ↓             ↓
+
+   ┌───────────────┐
+   │    nội dung   │
+   └───────────────┘
+
+     ↑             ↑
+          margin
+    */
+        /* padding = cách chữ với viền
+            margin  = cách box này với box khác */
+    margin: 50px 200px 10px 100px;
+    /* 
+     ┌─────────────────────┐  ← border
+│     padding         │
+│   ┌─────────────┐   │
+│   │   NỘI DUNG  │   │
+│   └─────────────┘   │
+│     padding         │
+└─────────────────────┘
+    */
+    padding: 50px;
+}
+.khoi3 {
+    background-color: yellow;
+}
+.khoi4{
+    background-color: pink;
+    display: flex;
+}
+.khoi5 {
+    background-color: orange;
+    width: 50%;
+}
+.khoi6 {
+    background-color: brown;
+    width: 50%;
+}
