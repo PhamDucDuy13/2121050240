@@ -1,0 +1,96 @@
+
+.body{
+    margin: 0;
+}
+
+.danh-muc {
+    background-color:  #2FA4E7 ;
+    
+}
+.danh-sach-muc {
+    padding: 0;
+    margin: 0;
+    /* list-style:none ;bo dau cham khi dung ul li */
+    list-style: none;
+    display: flex;
+    /* gap khoang cach cac doi tuong  o trong  */
+    gap: 20px;
+    
+}
+.lien-ket {
+    color: #ffffff;
+    /* text-decoration:none; bo gach chan cua the a */
+    text-decoration: none;
+}
+main {
+    display: flex;
+}
+.left {
+    width: 20%;
+    height: 100vh;
+
+    /* border:tao duonng vien vs  3 tham so: do day,loai duong vien va mau sac */
+    border-right: 1px solid #2FA4E7;
+}
+
+    
+
+form {
+    width: 80%;
+    margin: 10px auto;
+}
+p {
+    margin: 0;
+}
+input {
+    width: 100%;
+    padding: 5px 0;
+    border-radius: 5px;
+}
+.block {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.quen-mat-khau {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.quen-mat-khau-lien-ket {
+    color: #2FA4E7;
+    text-decoration: none;
+
+}
+button {
+    width: 100%;
+    padding: 5px 0;
+    background-color: #2FA4E7;
+    border-radius: 5px;
+}
+button:last-child {
+    background-color: blue;
+}
+.btn{
+    margin-bottom: 10px;
+}
+.right {
+    width: 80%;
+    
+}
+.list-item {
+    width: 95%;
+    height: 100px;
+    margin: 20px auto;
+    border: 1px solid #198cf0;
+    border-radius: 10px;
+}
+.chuc-nang {
+    width: 95%;
+    margin: 5px auto;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #2FA4E7;
+    padding-bottom: 10px;
+
+}

@@ -30,6 +30,8 @@
 └─────────────────────┘
     */
     padding: 50px;
+    width: 100px;
+    margin: auto;
 }
 .khoi3 {
     background-color: yellow;
