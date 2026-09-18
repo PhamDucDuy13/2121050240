@@ -1,0 +1,66 @@
+* {
+    background-color: #2f2c38;
+    color: #ffffff;
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.list {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-weight: bold;
+}
+.lk {
+    text-decoration: none;
+    color: #dbdbdd;
+}
+.logo {
+    width: 10%;
+}
+.avt {
+    width: 50px;
+    
+}
+.list-item {
+    padding: 15px;
+    border-radius: 15px;
+}
+.list-item:hover {
+    background-color: #dbdbdd;
+}
+.active {
+    background-color: #dbdbdd;
+}
+.banner {
+    
+    width: 95%;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+.banner-anh {
+    width: 100%;
+    border-radius: 10px;
+}
+.danh-sach-the-loai {
+    width: 95%;
+    
+    height: 20vh;
+    margin: 20px auto;
+}
+
+.phim-poster {
+    width: 24%;
+    height: 20vh;
+}
+
+.post {
+    width: 100px;
+    height: 100px;
+    border-radius: 999px;
+    gap: 40px;
+   
+}
