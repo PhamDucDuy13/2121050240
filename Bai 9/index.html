@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Javascript</title>
+    </head>
+    <body>
+        <script>
+            //in ra man hinh
+
+            document.writeln("hello world! <br>");
+            //khai bao bien
+
+            var name = "Duc Duy <br>";
+
+            document.writeln(name);
+
+            name = "quynh <br>";
+
+            document.writeln(name);
+
+            var year = 2025;
+
+            document.writeln(year);
+
+            //phep toan
+            //cong +
+
+            var soThuNhat = 10;
+            var soThuHai = 5;
+            var ketQua = 0;
+
+            //cong +
+            document.write("<br> ket qua soThu1 va soThu2 la:");
+            ketQua = soThuNhat + soThuHai;
+            document.writeln(ketQua);
+
+            // tru -
+            document.write("<br> ket qua soThu1 va soThu2 la:");
+            ketQua = soThuNhat - soThuHai;
+            document.writeln(ketQua);
+
+            //nhan *
+            document.write("<br> ket qua soThu1 va soThu2 la:");
+            ketQua = soThuNhat * soThuHai;
+            document.writeln(ketQua);
+
+            //chia /
+            document.write("<br> ket qua soThu1 va soThu2 la:");
+            ketQua = soThuNhat / soThuHai;
+            document.writeln(ketQua);
+
+            // % (chia lay phan du)
+            document.write("<br> ket qua soThu1 va soThu2 la:");
+            ketQua = soThuNhat % soThuHai;
+            document.writeln(ketQua);
+
+            // ++
+
+            document.writeln("<br>");
+            document.writeln(++soThuNhat);
+
+            // --
+            document.writeln("<br>");
+            document.writeln(++soThuNhat);
+
+            // +=
+            soThuNhat += soThuHai;
+            document.writeln("<br>");
+            document.writeln(soThuNhat);
+
+            // -=
+            soThuNhat -= soThuHai;
+            document.writeln("<br>");
+            document.writeln(soThuNhat);
+
+            var ho = "Ngo";
+            document.writeln("<br>");
+            document.writeln(ho + " " + name);
+            document.writeln("<br>");
+            document.write(ho.length);
+            //kiem tra kieu du lieu cua bien
+            document.writeln(typeof ho);
+
+            //
+            var hoVaTen = "Pham Duc Duy";
+            document.writeln("<br>");
+            document.writeln(hoVaTen.indexOf("Duy"));
+
+            document.writeln("<br>");
+            document.writeln(hoVaTen.includes("D"));
+
+            document.writeln("<br>");
+            document.writeln(hoVaTen.startsWith("Pham"));
+
+            document.writeln("<br>");
+            document.writeln(hoVaTen.replace("Pham", "Ngo"));
+
+            document.writeln("<br>");
+            document.writeln(hoVaTen.toUpperCase());
+
+            document.writeln("<br>");
+            document.writeln(hoVaTen.toLocaleLowerCase());
+        </script>
+
+        <script src="script.js"></script>
+    </body>
+</html>
