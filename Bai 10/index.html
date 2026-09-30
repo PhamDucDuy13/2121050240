@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Bai 10</title>
+    </head>
+    <body>
+        <script>
+            //ham date
+            var homNay = new Date();
+            document.writeln("<br>");
+            document.write(homNay);
+
+            var ngay = new Date("1/6/ 2026");
+            document.writeln("<br>");
+            document.write(ngay);
+
+            var namNay = homNay.getFullYear();
+            document.writeln("<br>");
+            document.write(namNay);
+
+            var thangNay = homNay.getMonth() + 1;
+            document.writeln("<br>");
+            document.write(thangNay);
+
+            var ngayHomNay = homNay.getDate();
+            document.writeln("<br>");
+            document.write(ngayHomNay);
+
+            var ngayThu = homNay.getDay() + 1;
+            document.writeln("<br>");
+            document.write(ngayThu);
+
+            document.writeln("<br>");
+            document.writeln(
+                "Hom nay la thu" +
+                    ngayThu +
+                    "ngay " +
+                    ngayHomNay +
+                    "Thang" +
+                    thangNay +
+                    "Nam" +
+                    namNay,
+            );
+
+            //mang
+            var mangSo = [1, 2, 3, 4, 5];
+            document.writeln("<br>");
+            document.writeln(mangSo[2]);
+
+            document.writeln("<br>");
+            document.writeln(mangSo.length);
+
+            var mangTen = ["Diem Quynh", "Duy"];
+            document.writeln("<br>");
+            document.writeln(mangTen[1]);
+
+            var mang = [1, 2, 3, 4, 5, "Diem Quynh", "Duy"];
+            document.writeln("<br>");
+            document.writeln(mang[5]);
+
+            var d = mang.concat(mangSo, mangTen);
+            document.writeln("<br>");
+            document.writeln(d.join("-"));
+            //dung join thi se thanh kieu chuoi (ko con la mang nx)
+
+            document.writeln("<br>");
+            document.writeln(d.pop());
+            //pop lay ra phan tu cuoi cung trong mang
+
+            document.writeln("<br>");
+            d.push("Sam");
+            document.writeln(mangSo.reverse());
+
+            //Object
+            var thongTinSinhVien = {
+                ten: "Pham Duc Duy",
+                namSinh: 2003,
+                queQuan: {
+                    thanhPho: "Hung Yen",
+                    xa: "Nam Tien Hung",
+                },
+            };
+            document.writeln("<br>");
+            document.write(thongTinSinhVien.ten);
+            document.writeln("<br>");
+            document.write(thongTinSinhVien.queQuan.thanhPho);
+            tuoi = namNay - thongTinSinhVien.namSinh;
+            thongTinSinhVien.tuoi = tuoi;
+            console.log(thongTinSinhVien.tuoi);
+            //boolean :true nam / false nu
+            thongTinSinhVien.gioiTinh = true;
+
+            var thongTinSV = [
+                {
+                    hoTen: "Pham Duc Duy",
+                    namSinh: 2003,
+                    queQuan: {
+                        thanhPho: "Hung Yen",
+                        xa: "Nam Tien Hung",
+                    },
+                },
+                {
+                    hoTen: "Ngo Diem Quynh",
+                    namSinh: 2003,
+                    queQuan: {
+                        thanhPho: "Hung Yen",
+                        xa: "Nam Tien Hung",
+                    },
+                },
+            ];
+            console.log(thongTinSV);
+
+            //so sanh logic
+            // == != > <
+            // voi TH === :so sanh gia tri va kieu du lieu
+            var so1 = 10;
+            var so2 = "10";
+            document.writeln("<br>");
+            document.writeln(5 == 10);
+
+            document.writeln("<br>");
+            document.writeln(5 != 10);
+
+            document.writeln("<br>");
+            document.writeln(5 <= 10);
+            document.writeln("<br>");
+            document.writeln(5 >= 10);
+
+            document.writeln("<br>");
+            document.writeln(5 === 10);
+
+            //&& ||
+
+            //cau dieu kien if else
+            if (ngayThu >= 7) {
+                document.writeln("Cuoi Tuan");
+            } else if (ngayThu == 6) {
+                Document.writeln("sap duoc nghi");
+            } else {
+                document.writeln("Di hoc");
+            }
+            document.writeln("<br>");
+            var so = 9;
+            if (so % 2 == 0) {
+                document.writeln("So chan");
+            } else {
+                document.writeln("so le");
+            }
+        </script>
+
+        <script src="script.js"></script>
+    </body>
+</html>
