@@ -145,12 +145,81 @@
                 document.writeln("Di hoc");
             }
             document.writeln("<br>");
-            var so = 9;
+            var so = "20000000000000000000001";
+            var doDai = so.length;
+            var soCuoiCung = so[doDai - 1];
+
             if (so % 2 == 0) {
                 document.writeln("So chan");
             } else {
-                document.writeln("so le");
+                document.writeln(so + " la so le");
             }
+            var d = new Date();
+            var theDay = d.getDay();
+            switch (theDay) {
+                case 5:
+                    document.writeln("finally Friday");
+                    break;
+                case 6:
+                    document.writeln("supper ");
+                    break;
+                case 0:
+                    document.writeln("sleepy Sunday");
+                    break;
+                default:
+                    document.write("I'm looking forward to this weekend!");
+            }
+
+            //vong lap for
+            // var i = 0;
+            // for (i = 0; i <= 10000; i++) {
+            //     document.writeln("<br>");
+            //     document.write("the number is" + i);
+            // }
+
+            // for (mang)
+            var mang = [1, 2, 3, 4, 5, "Diem Quynh", "Duy"];
+            // for (var i = 0; i < mang.length; i++) {
+            //     document.writeln("<br>");
+            //     document.writeln(mang[i]);
+            // }
+            for (var i = 0; i < mang.length; i++) {
+                if (!isNaN(mang[i]) == true) {
+                    document.writeln("<br>");
+                    document.writeln(mang[i]);
+                } else {
+                    document.writeln("<br>");
+                    document.writeln("Xin Chao");
+                }
+            }
+
+            //while
+            i = 0;
+            while (i <= 10) {
+                document.writeln("the number is" + i);
+                document.writeln("<br>");
+                i = i + 1;
+            }
+            //do while: lam xong ms kiem tra
+            var j = 0;
+            do {
+                document.write("the number is" + j);
+                document.writeln("<br>");
+                j = j + 1;
+            } while (j <= 10);
+
+            //popup boxes
+            alert("Hello");
+
+            // var r = confirm("press a button");
+            // if (r == true) {
+            //     document.writeln("you pressed OK!");
+            // } else {
+            //     document.writeln("you pressed Cancel!");
+            // }
+
+            var r = prompt("Nhap vao Ho Ten", "Nhap ten o day");
+            document.writeln(r);
         </script>
 
         <script src="script.js"></script>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <title>Bai 11</title>
+    </head>
+    <body>
+        <script>
+            //functions
+            //ko tham so
+            function sayHello() {
+                document.writeln("hello");
+            }
+            sayHello();
+            //co tham so
+            function sayHello2(ten) {
+                document.write("<br> Xin chao ban" + ten);
+            }
+            sayHello2("Duc Duy");
+            sayHello2("Diem Quynh");
+            document.write("<br>");
+
+            // var a = prompt("nhap so vao day");
+            // var b = prompt("nhap so vao day");
+            // function tong(a, b) {
+            //     if (!isNaN(a) && !isNaN(b)) {
+            //         document.write(Number(a) + Number(b));
+            //     }
+            // }
+
+            // tong(a, b);
+
+            // BTVN
+            //viet ham tinh diem chu dua tren 3 dau diem(A,B,C)
+            //Tong = A*0.6+B*0.3+c*0.1 => diem chu tuong ung
+            var A = Number(prompt("nhap diem A"));
+            var B = Number(prompt("nhap diem B"));
+            var C = Number(prompt("nhap diem C"));
+            function tinhDiemChu(A, B, C) {
+                var tong = A * 0.6 + B * 0.3 + C * 0.1;
+
+                if (tong >= 8.5) {
+                    return "A";
+                } else if (tong >= 7) {
+                    return "B";
+                } else if (tong >= 5.5) {
+                    return "C";
+                } else if (tong >= 4) {
+                    return "D";
+                } else {
+                    return "F";
+                }
+            }
+            document.write("Diem chu:" + tinhDiemChu(A, B, C));
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>
