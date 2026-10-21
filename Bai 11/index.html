@@ -9,20 +9,78 @@
         <title>Bai 11</title>
     </head>
     <body>
+        <div>
+            Nhập Điểm A:<input
+                id="diemA"
+                type="number"
+            />
+        </div>
+        <div>
+            Nhập Điểm B:<input
+                id="diemB"
+                type="number"
+            />
+        </div>
+        <div>
+            Nhập Điểm C:<input
+                id="diemC"
+                type="number"
+            />
+        </div>
+        <div>
+            <button onclick="tinhDiem()">Tính Điểm</button>
+        </div>
+        <div>
+            Kết Quả:<input
+                type="text"
+                name=""
+                id="ketQua"
+            />
+        </div>
+        <div>
+            Years:<input
+                type="number"
+                id="namSinh"
+                placeholder="Nhap Nam Sinh"
+            />
+        </div>
+        <div>
+            <button onclick="hienThiTuoi()">Tinh Tuoi</button>
+        </div>
+        <div>
+            So Tuoi:
+            <input
+                type="text"
+                name=""
+                id="soTuoi"
+            />
+        </div>
         <script>
+            // events
+            function tinhDiem() {
+                //diemA
+                var a = parseFloat(document.getElementById("diemA").value);
+                //diem B
+                var b = parseFloat(document.getElementById("diemB").value);
+                //diem C
+                var c = parseFloat(document.getElementById("diemC").value);
+
+                document.getElementById("ketQua").value = tinhDiemChu(a, b, c);
+            }
+
             //functions
             //ko tham so
-            function sayHello() {
-                document.writeln("hello");
-            }
+            // function sayHello() {
+            //     document.writeln("hello");
+            // }
             sayHello();
             //co tham so
-            function sayHello2(ten) {
-                document.write("<br> Xin chao ban" + ten);
-            }
-            sayHello2("Duc Duy");
-            sayHello2("Diem Quynh");
-            document.write("<br>");
+            // function sayHello2(ten) {
+            //     document.write("<br> Xin chao ban" + ten);
+            // }
+            // sayHello2("Duc Duy");
+            // sayHello2("Diem Quynh");
+            // document.write("<br>");
 
             // var a = prompt("nhap so vao day");
             // var b = prompt("nhap so vao day");
@@ -37,25 +95,53 @@
             // BTVN
             //viet ham tinh diem chu dua tren 3 dau diem(A,B,C)
             //Tong = A*0.6+B*0.3+c*0.1 => diem chu tuong ung
-            var A = Number(prompt("nhap diem A"));
-            var B = Number(prompt("nhap diem B"));
-            var C = Number(prompt("nhap diem C"));
-            function tinhDiemChu(A, B, C) {
-                var tong = A * 0.6 + B * 0.3 + C * 0.1;
+            // var A = Number(prompt("nhap diem A"));
+            // var B = Number(prompt("nhap diem B"));
+            // var C = Number(prompt("nhap diem C"));
+            function tinhDiemChu(a, b, c) {
+                var tong = a * 0.6 + b * 0.3 + c * 0.1;
+                var kq = "";
 
-                if (tong >= 8.5) {
+                if (tong >= 8 && tong <= 10) {
                     return "A";
-                } else if (tong >= 7) {
+                } else if (tong >= 6 && tong < 8) {
                     return "B";
-                } else if (tong >= 5.5) {
+                } else if (tong >= 5 && tong < 6) {
                     return "C";
-                } else if (tong >= 4) {
+                } else if (tong >= 4 && tong < 5) {
                     return "D";
-                } else {
+                } else if (tong > 0 && tong < 4) {
                     return "F";
+                } else {
+                    return "Diem ko hop le";
                 }
+                return kq;
             }
-            document.write("Diem chu:" + tinhDiemChu(A, B, C));
+
+            function tinhTuoi(namSinh) {
+                var namNay = new Date().getFullYear();
+                var tuoi = namNay - namSinh;
+                var st = "";
+
+                if (tuoi > 0 && tuoi <= 100) {
+                    return tuoi;
+                } else {
+                    return "tuoi ko hop le";
+                }
+                return st;
+            }
+            function hienThiTuoi() {
+                var namSinh = parseInt(
+                    document.getElementById("namSinh").value,
+                );
+                document.getElementById("soTuoi").value = tinhTuoi(namSinh);
+            }
+
+            // chuyen doi chuoi thanh so
+            // parseInt("42")   result =42
+            // parseInt("42.33")   result =42
+            // parseFloat("42.33")  result =42.33
+            // 3+3+ parseInt("3")       result=9
         </script>
         <script src="script.js"></script>
     </body>
