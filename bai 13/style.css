@@ -1,0 +1,108 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    
+}
+.ul-link {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 15px 30px;
+    margin: 0;
+    
+    list-style: none;
+    gap: 20px;
+    
+}
+.image {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    
+}
+.link{
+    display: block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+}
+.funcion {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 20px;
+    padding-right: 30px;
+    
+}
+.search {
+    color: white;
+    white-space: nowrap;
+}
+.data img {
+    width: 100px;
+    height: auto;
+    display: block;
+}
+/* banner */
+.banner {
+    width: 90%;
+    margin: 30px auto;
+    border: 15px;
+}
+.banner-img {
+    width: 100%;
+    height: 400px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: block;
+    object-fit: contain;
+}
+#video {
+    display: none;
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 10px;
+}
+#video-overlay {
+    position: absolute;
+    inset:0;
+    cursor: pointer;
+}
+/* danh sach phim */
+.category {
+    width: 95%;
+    height: 20vh;
+    margin: 20px auto;
+}
+.name-category h4 {
+    color: black;
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+.movie {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.poster {
+    width: calc((100% - 30px) /4);
+    height: 250px;
+    object-fit: cover;
+    
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+.poster:hover {
+    transform: scale(1.05);
+}
