@@ -7,11 +7,5 @@
 </head>
 <body>
     <h1>Trang Chu</h1>
-    <?php
-        session_start();
-        if(isset($_SESSION['userName']) ){
-            header("location: trangchu.php")
-        }
-    ?>
 </body>
 </html>

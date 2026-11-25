@@ -55,13 +55,19 @@
         </div>
     </div>
     <?php
+    //su dung include de ket not 2 file vs nhau
+
+        include'connect.php';
+        session_start();
        if(isset($_POST['userName']) && isset($_POST['password'])){
             $userName = $_POST['userName'];
             $password = $_POST['password'];
-            if($userName =="admin" && $password=="123"){
-                session_start();
+            $sql ="SELECT * FROM `nguoi_dung` WHERE  ten_dang_nhap ='$userName' and mat_khau ='$password'";
+            $result = mysqli_query($conn,$sql);
+            if(mysqli_num_rows($result) >0){
+                
                 $_SESSION['userName'] ="thanh cong";
-                header("Location: trangchu.php");
+                header("Location: index.php");
                 exit;
             }
             else{
